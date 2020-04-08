@@ -4,11 +4,7 @@ import bitcoin.difficulty.finder.BlockHeader
 import bitcoin.difficulty.finder.Finder
 import bitcoin.difficulty.finder.constants.TestConstants
 import bitcoin.difficulty.finder.extensions.swipeEndianity
-import bitcoin.difficulty.finder.extensions.toDouble
-import bitcoin.difficulty.finder.interfaces.Hashable
 import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 
 suspend fun main (arguments : Array<String>) {
@@ -30,13 +26,29 @@ suspend fun main (arguments : Array<String>) {
     val finder = Finder(blockHeader)
 
     // 3. Use the new finder object to try and find the hash
+    // Average time to find this particular hash : 5-6 seconds (Intel i7 3.2GHz with 8 cores)
     GlobalScope.launch { finder.find() }.join()
 
-    println(finder.foundNonce)
-    println(finder.foundHash.swipeEndianity())
+    println("Nonce 1: " + finder.foundNonce)
+    println("Block hash: " + finder.foundHash.swipeEndianity())
 
-    /*println("0000000000000000000d7612d743325d8e47cb9e506d547694478f35f736188e".toDouble(16))
-    println(finder.difficulty)
+    // The next part is very CPU-intensive and probably won't yield a valid hash and nonce
+    // You must uncomment this yourself if you want to run it.
+    // Estimated runtime on an Intel i7 3.2GHz with 8 cores : 5-7 minutes
 
-    println("0000000000000000000d7612d743325d8e47cb9e506d547694478f35f736188e".toDouble(16) <= finder.difficulty)*/
+    /*
+
+    // 4. Instantiating a new block header with the same data but with a changed nonce; also printing it
+    val blockHeader2 : BlockHeader = blockHeader.copy()
+        .apply { nonce = Random.nextLong(finder.foundNonce, finder.foundNonce + TestConstants.MAX_NONCE_STEP) }
+
+    // 5. We try to find another good hash and nonce with this header
+    finder.setBlockHeader(blockHeader2)
+    GlobalScope.launch { finder.find() }.join()
+
+    println("Nonce 2 start: " + blockHeader2.nonce)
+    println("Nonce 2: " + finder.foundNonce)
+    if (finder.found()) println("Block hash: " + finder.foundHash.swipeEndianity()) else println("Hash not found")
+
+     */
 }

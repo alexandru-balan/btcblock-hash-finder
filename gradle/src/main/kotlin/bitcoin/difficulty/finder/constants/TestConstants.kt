@@ -10,5 +10,5 @@ object TestConstants {
     const val START_NONCE : Long = 3_000_000_000
 
     // Other values
-    const val MAX_NONCE : Long = 3_100_000_000
+    const val MAX_NONCE_STEP : Long = 100_000_000
 }
