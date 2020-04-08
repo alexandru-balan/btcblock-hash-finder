@@ -4,6 +4,7 @@ import bitcoin.difficulty.finder.BlockHeader
 import bitcoin.difficulty.finder.Finder
 import bitcoin.difficulty.finder.constants.TestConstants
 import bitcoin.difficulty.finder.extensions.swipeEndianity
+import bitcoin.difficulty.finder.interfaces.Hashable
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -21,6 +22,16 @@ suspend fun main (arguments : Array<String>) {
         testObject.DIFFICULTY_BITS,
         testObject.START_NONCE
     )
+
+    // 1.1 Printing the first five hashes
+    repeat(5) {
+        blockHeader.hash(Hashable.Algorithm.SHA256)
+        println("Nonce " + blockHeader.nonce.toString() + "\t:\t" + blockHeader.hash)
+        blockHeader.nonce ++
+    }
+
+    // 1.2 Resetting the nonce
+    blockHeader.nonce = testObject.START_NONCE
 
     // 2. Get a finder object
     val finder = Finder(blockHeader)
