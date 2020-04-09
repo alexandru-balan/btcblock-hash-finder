@@ -32,7 +32,7 @@ I can only give you the links and you need to install things manually because Wi
 - **[Gradle](https://gradle.org/install/)**: Follow the instructions for windows
 - **[Kotlin](https://kotlinlang.org/docs/tutorials/command-line.html):** I recommend following the chocolatey route
 
-## How to run the project
+## How to run the project (without the IDE)
 
 0. Download this repo either with `git clone https://github.com/alexandru-balan/btcblock-hash-finder.git` or through the download button
 
