@@ -40,4 +40,14 @@ I can only give you the links and you need to install things manually because Wi
 
 2. Run in this order:
    - `./gradlew build` or to speciffy a java folder path `./gradlew build -Dorg.gradle.java.home={path_to_java_folder}`, for example I run `./gradlew build -Dorg.gradle.java.home=/usr/lib/jvm/java-13-openjdk/`
-   - `./gradlew run`; I run `./gradlew run -Dorg.gradle.java.home=/usr/lib/jvm/java-13-openjdk/`  
+   - `./gradlew run`; I run `./gradlew run -Dorg.gradle.java.home=/usr/lib/jvm/java-13-openjdk/`
+   
+## How to use the project
+
+This project is intended to be just a starting point that I made as a university project. I architected the project to be easy to build through gradle and easy to incorporate in other projects.
+
+The main classes are **BlockHeader** and **Finder** and are essential to the project. The **BlockHeader** class implements a **Hashable** interface which means that you can use `blockHeader.hash()` to generate a hash of the block. 
+
+Everything was designed with speed in mind so most auxiliary stuff like the files you will find in the *extensions* package uses bitwise operations. The **Finder** class is multithreaded and can run through 100_000_000 hashes in a matter of minutes on most modern laptops. *(7 minutes on a laptop with Intel i7 3.2GHz and 8 cores)*
+
+The *playground* package is used for the executable part of the project. Please put the **Main.kt** file there and any other scripts you might want to run.
