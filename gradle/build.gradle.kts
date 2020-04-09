@@ -1,13 +1,18 @@
 plugins {
     java
     kotlin("jvm") version "1.3.71"
+    application
 }
 
 group = "bitcoin.difficulty.finder"
-version = "2020.alpha.1"
+version = "2020.alpha.2"
 
 repositories {
     mavenCentral()
+}
+
+application {
+    mainClassName = "bitcoin.difficulty.finder.playground.MainKt"
 }
 
 dependencies {

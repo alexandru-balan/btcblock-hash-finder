@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MainKt" type="JetRunConfigurationType" singleton="false" nameIsGenerated="true">
+    <output_file path="$USER_HOME$/Desktop/file.log" is_save="true" />
+    <module name="gradle.main" />
+    <option name="VM_PARAMETERS" value="" />
+    <option name="PROGRAM_PARAMETERS" value="" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <option name="MAIN_CLASS_NAME" value="bitcoin.difficulty.finder.playground.MainKt" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="compileKotlin" externalProjectPath="$PROJECT_DIR$/gradle" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
