@@ -41,12 +41,15 @@ class BlockHeader private constructor(private val arguments : Map<String, Any>) 
         val hexPrefix = "0x"
         var descriptor = ""
 
-        descriptor += "Version$separator$hexPrefix${version.swipeEndianity()}\n"
-        descriptor += "Previous Block Hash(reversed)$separator${previousBlockHash.swipeEndianity()}\n"
-        descriptor += "Merkle Root Hash(reversed)$separator${merkleRootHash.swipeEndianity()}\n"
-        descriptor += "Timestamp$separator$hexPrefix${timestamp.swipeEndianity()}\n"
-        descriptor += "Difficulty$separator$hexPrefix${difficultyBits.swipeEndianity()}\n"
-        descriptor += "Nonce$separator$hexPrefix${nonceHex.swipeEndianity()}\n"
+        descriptor += "Version$separator$hexPrefix${version.swipeEndianity()} (${version.swipeEndianity()
+            .toLong(16)})\n"
+        descriptor += "Previous Block Hash$separator${previousBlockHash.swipeEndianity()}\n"
+        descriptor += "Merkle Root Hash$separator${merkleRootHash.swipeEndianity()}\n"
+        descriptor += "Timestamp$separator$hexPrefix${timestamp.swipeEndianity()} (${timestamp.swipeEndianity()
+            .toLong(16)})\n"
+        descriptor += "Difficulty$separator$hexPrefix${difficultyBits.swipeEndianity()} (${difficultyBits.swipeEndianity()
+            .toLong(16)})\n"
+        descriptor += "Nonce$separator$hexPrefix${nonceHex.swipeEndianity()} ($nonce)\n"
         descriptor += if (hash == "NOT COMPUTED") "Block Hash$separator$hash" else "Block Hash$separator${hash.swipeEndianity()}"
 
         return descriptor
