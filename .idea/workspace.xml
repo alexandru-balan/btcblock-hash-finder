@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f05e57ab-d3ba-47a9-81da-5a25f952088f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/src/main/kotlin/bitcoin/difficulty/finder/BlockHeader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/src/main/kotlin/bitcoin/difficulty/finder/BlockHeader.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/src/main/kotlin/bitcoin/difficulty/finder/playground/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/src/main/kotlin/bitcoin/difficulty/finder/playground/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +109,7 @@
       <workItem from="1586255626890" duration="24402000" />
       <workItem from="1586356746849" duration="615000" />
       <workItem from="1586359339213" duration="16604000" />
-      <workItem from="1586437106532" duration="10841000" />
+      <workItem from="1586437106532" duration="11909000" />
     </task>
     <task id="LOCAL-00001" summary="Added gradle build and run possibilites">
       <created>1586446644933</created>
@@ -119,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586446644933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed the playground a little bit and gave the user the option to run the CPU-intensive task">
+      <created>1586449427583</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586449427583</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,12 +137,17 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Added gradle build and run possibilites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gradle build and run possibilites" />
+    <MESSAGE value="Changed the playground a little bit and gave the user the option to run the CPU-intensive task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the playground a little bit and gave the user the option to run the CPU-intensive task" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="578" y="180" key="#Deployment" timestamp="1586449409309">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="578" y="180" key="#Deployment/0.0.1920.1038@0.0.1920.1038" timestamp="1586449409309" />
     <state x="621" y="182" width="667" height="673" key="#MainKt" timestamp="1586204486511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -167,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="398" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1586204151936" />
-    <state x="504" y="84" key="CommitChangelistDialog2" timestamp="1586446636002">
+    <state x="504" y="84" key="CommitChangelistDialog2" timestamp="1586449420859">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="504" y="84" key="CommitChangelistDialog2/0.0.1920.1038@0.0.1920.1038" timestamp="1586446636002" />
+    <state x="504" y="84" key="CommitChangelistDialog2/0.0.1920.1038@0.0.1920.1038" timestamp="1586449420859" />
     <state width="473" height="524" key="DebuggerActiveHint" timestamp="1586270752151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,28 +191,28 @@
     </state>
     <state x="791" y="236" key="FileChooserDialogImpl/0.0.1920.1038@0.0.1920.1038" timestamp="1586442047183" />
     <state x="743" y="278" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586204222281" />
-    <state width="1874" height="274" key="GridCell.Tab.0.bottom" timestamp="1586449330880">
+    <state width="1874" height="274" key="GridCell.Tab.0.bottom" timestamp="1586450378487">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1586449330880" />
+    <state width="1874" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1586450378487" />
     <state width="1872" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586277449394" />
     <state width="1872" height="335" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1586335838252" />
-    <state width="1874" height="274" key="GridCell.Tab.0.center" timestamp="1586449330878">
+    <state width="1874" height="274" key="GridCell.Tab.0.center" timestamp="1586450378486">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="274" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1586449330878" />
+    <state width="1874" height="274" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1586450378486" />
     <state width="1872" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586277449393" />
     <state width="1872" height="335" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1586335838251" />
-    <state width="1874" height="274" key="GridCell.Tab.0.left" timestamp="1586449330878">
+    <state width="1874" height="274" key="GridCell.Tab.0.left" timestamp="1586450378486">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="274" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1586449330878" />
+    <state width="1874" height="274" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1586450378486" />
     <state width="1872" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586277449393" />
     <state width="1872" height="335" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1586335838251" />
-    <state width="1874" height="274" key="GridCell.Tab.0.right" timestamp="1586449330879">
+    <state width="1874" height="274" key="GridCell.Tab.0.right" timestamp="1586450378487">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="274" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1586449330879" />
+    <state width="1874" height="274" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1586450378487" />
     <state width="1872" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586277449394" />
     <state width="1872" height="335" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1586335838252" />
     <state width="1874" height="337" key="GridCell.Tab.1.bottom" timestamp="1586449160910">
@@ -232,6 +243,10 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="438" y="86" width="1215" height="886" key="SettingsEditor/0.0.1920.1038@0.0.1920.1038" timestamp="1586442648541" />
+    <state x="556" y="254" key="Vcs.Push.Dialog.v2" timestamp="1586449431749">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="556" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1038@0.0.1920.1038" timestamp="1586449431749" />
     <state width="561" height="520" key="XDebugger.FullValuePopup" timestamp="1586257949763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,10 +257,10 @@
     <state x="609" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1586437106293" />
     <state x="609" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586255627594" />
     <state x="609" y="379" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1586356759243" />
-    <state x="732" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586447883786">
+    <state x="732" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586449991365">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="732" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1038@0.0.1920.1038" timestamp="1586447883786" />
+    <state x="732" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1038@0.0.1920.1038" timestamp="1586449991365" />
     <state x="237" y="245" width="1435" height="547" key="new project wizard" timestamp="1586202021741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

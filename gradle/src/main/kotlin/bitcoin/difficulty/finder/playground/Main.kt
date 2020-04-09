@@ -31,7 +31,7 @@ suspend fun main (arguments : Array<String>) {
     // 1.1 Printing the first five hashes
     repeat(5) {
         blockHeader.hash(Hashable.Algorithm.SHA256)
-        println("Nonce " + blockHeader.nonce.toString() + "\t:\t" + blockHeader.hash)
+        println("Nonce " + blockHeader.nonce.toString() + "\t:\t" + blockHeader.hash.swipeEndianity())
         blockHeader.nonce++
     }
 
