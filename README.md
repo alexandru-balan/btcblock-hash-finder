@@ -36,7 +36,7 @@ I can only give you the links and you need to install things manually because Wi
 
 0. Download this repo either with `git clone https://github.com/alexandru-balan/btcblock-hash-finder.git` or through the download button
 
-1. Navigate to `btcblock-hash-finder/gradle`
+1. Navigate to `btcblock-hash-finder/`
 
 2. Run in this order:
    - `./gradlew build` or to speciffy a java folder path `./gradlew build -Dorg.gradle.java.home={path_to_java_folder}`, for example I run `./gradlew build -Dorg.gradle.java.home=/usr/lib/jvm/java-13-openjdk/`
